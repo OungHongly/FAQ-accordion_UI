@@ -36,7 +36,7 @@
   /* --letter-spacing-tight: -2px; */
 
   /* FONT FAMILY */
-  --ff-body: sans-serif;
+  --ff-body: "Work Sans", sans-serif;
 
   /* COLOR : Tint / Base / Shade */
   /* Use website: maketintsandshades.com */
@@ -130,4 +130,32 @@ span {
 
 .small-text {
   font-size: var(--text-sm);
+}
+/* Styling layout---------------- */
+.hide {
+  display: none;
+}
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+
+  border-radius: var(--space-sm);
+  padding: var(--space-md);
+  margin: var(--space-lg);
+  border: 1px solid black;
+}
+.faq-heading {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+.faq-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.faq-content-header {
+  display: flex;
+  justify-content: space-between;
 }
