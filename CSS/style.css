@@ -157,7 +157,6 @@ span {
   border-radius: var(--space-sm);
   padding: var(--space-lg);
   margin: var(--space-lg);
-  border: 1px solid black;
 }
 .faq-heading {
   display: flex;
