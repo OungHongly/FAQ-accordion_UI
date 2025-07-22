@@ -171,10 +171,13 @@ span {
 }
 .faq-content-group {
   cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: var(--space-md);
 }
 .faq-content-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   font-weight: var(--fw-medium);
   margin-bottom: var(--space-sm);
@@ -194,4 +197,33 @@ span {
   position: absolute;
   z-index: 10;
   right: 0;
+}
+
+/* ======Media Query======= */
+/* 
+📏 Font Size Scale (based on html font-size %)
+----------------------------------------------
+62.5%   → 1rem = 10px   → 2rem = 20px
+56.25%  → 1rem =  9px   → 2rem = 18px
+50%     → 1rem =  8px   → 2rem = 16px
+43.75%  → 1rem =  7px   → 2rem = 14px
+37.5%   → 1rem =  6px   → 2rem = 12px
+
+💡 Use rem units for text and spacing.
+💡 Base font-size for body: 2rem
+*/
+@media (max-width: 576px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 492px) {
+  .faq-body {
+    gap: var(--space-md);
+  }
+}
+@media (max-width: 423px) {
+  .group-btn {
+    margin-left: var(--space-md);
+  }
 }
