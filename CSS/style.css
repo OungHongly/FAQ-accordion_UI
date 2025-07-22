@@ -132,6 +132,19 @@ span {
   font-size: var(--text-sm);
 }
 /* Styling layout---------------- */
+.faq {
+  background-color: var(--primary-tint);
+  background-image: url("../assets/images/background-pattern-desktop.svg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hide {
   display: none;
 }
@@ -139,6 +152,7 @@ span {
   display: flex;
   flex-direction: column;
   max-width: 600px;
+  background-color: var(--White);
 
   border-radius: var(--space-sm);
   padding: var(--space-lg);
@@ -155,11 +169,14 @@ span {
   flex-direction: column;
   gap: var(--space-lg);
 }
+/* .faq-content-group {
+} */
 .faq-content-header {
   display: flex;
   justify-content: space-between;
 
   font-weight: var(--fw-medium);
+  margin-bottom: var(--space-sm);
 }
 .faq-content-body {
   color: var(--primary-base);
