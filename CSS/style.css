@@ -62,7 +62,7 @@ body {
   font-family: var(--ff-body);
   font-weight: var(--fw-normal);
   line-height: var(--line-height-normal);
-  color: var(--primary-base);
+  color: var(--primary-shade);
 }
 
 .container {
